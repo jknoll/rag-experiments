@@ -67,5 +67,8 @@ rag_chain = (
     | StrOutputParser()   
 )
 
-query = "What did the president say about Justice Breyer?"
-rag_chain.invoke(query)
+print("PROMPT:\n\n")
+print(prompt)
+
+query = "What did the president say the economic outlook is for America?"
+print("Output: " + rag_chain.invoke(query))
